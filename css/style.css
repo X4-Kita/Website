@@ -256,6 +256,37 @@ a:focus {
 
 /*end header section*/
 /* slider section */
+
+.top-main-pic {
+  position: relative; /* Make the top-main-pic container relative for absolute positioning */
+}
+
+.moon-center {
+  position: absolute; /* Position the moon image absolutely */
+  top: 38%; /* Place the moon image at the top of the container */
+  left: 0; /* Place the moon image at the left of the container */
+  /* Adjust width and height for larger moon within the container */
+  width: 100%; /* Fills the container width */
+  animation: rotate 500s linear infinite; /* Add animation properties */
+}
+
+.friends-center {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  width: 95%;
+  height: 80%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate image by 360 degrees */
+  }
+}
+
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
